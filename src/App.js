@@ -5,6 +5,7 @@ import LoginPage from './components/LoginPage';
 import AdminDashboard from './components/AdminDashboard';
 import TeacherDashboard from './components/TeacherDashboard';
 import StudentDashboard from './components/StudentDashboard';
+import './index.css';
 
 const PrivateRoute = ({ element, allowedRoles }) => {
   const { user } = useAuth();
