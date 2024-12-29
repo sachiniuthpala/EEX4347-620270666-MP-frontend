@@ -3,8 +3,7 @@ import { useAuth } from '../contexts/AuthContext';
 import { useNavigate } from 'react-router-dom';
 import LogImage from '../assets/login-illustration.png';
 import LMSLogo from '../assets/lmslogo.jpg';
-import fb from '../assets/fb.jpg';
-import Google from '../assets/gp.jpg';
+
 
 const LoginPage = () => {
   const [email, setEmail] = useState('');
@@ -95,24 +94,9 @@ const LoginPage = () => {
           </button>
         </form>
        
-        <div className="mt-6 text-center">
-          <p className="text-sm text-gray-500">Sign in with</p>
-          <div className="mt-3 flex justify-center space-x-4">
-            <button className="p-2 border border-gray-200 rounded-full hover:bg-gray-50">
-              <img src={fb} alt="fb" className="h-5 w-5" />
-            </button>
-            <button className="p-2 border border-gray-200 rounded-full hover:bg-gray-50">
-              <img src={Google} alt="google" className="h-5 w-5" />
-            </button>
-          </div>
-        </div>
+        
        
-        <p className="mt-6 text-center text-sm text-gray-500">
-          Don't have an account?
-          <button type="button" className="ml-1 text-purple-600 hover:text-purple-500">
-            Sign Up
-          </button>
-        </p>
+        
       </div>
      
       <div className="hidden lg:block w-1/2 ml-8">
